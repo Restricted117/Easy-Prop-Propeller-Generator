@@ -1,4 +1,4 @@
-# Project Title
+# Easy Prop Propeller Generator
 
 Simple overview of use/purpose.
 
