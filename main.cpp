@@ -702,21 +702,21 @@ int WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPS
 				ImPlotFlags plot_flags = ImPlotFlags_Crosshairs;
 				ImPlotAxisFlags axis_flags = ImPlotAxisFlags_AutoFit;
 
-				VecToCarray* r_R = new VecToCarray{ Propeller::r_R };
-				VecToCarray* re = new VecToCarray{ Propeller::reynolds };
-				VecToCarray* re_min = new VecToCarray{ Propeller::reynolds_min };
-				VecToCarray* re_max = new VecToCarray{ Propeller::reynolds_max };
-				VecToCarray* chord = new VecToCarray{ Propeller::chord };
-				VecToCarray* rpm_curve = new VecToCarray{ Propeller::rpm_curve };
-				VecToCarray* thrust_curve = new VecToCarray{ Propeller::thrust_curve };
-				VecToCarray* thrust_curve_min = new VecToCarray{ Propeller::thrust_curve_min };
-				VecToCarray* thrust_curve_max = new VecToCarray{ Propeller::thrust_curve_max };
-				VecToCarray* torque_curve = new VecToCarray{ Propeller::torque_curve };
-				VecToCarray* torque_curve_min = new VecToCarray{ Propeller::torque_curve_min };
-				VecToCarray* torque_curve_max = new VecToCarray{ Propeller::torque_curve_max };
-				VecToCarray* eff_curve = new VecToCarray{ Propeller::eff_curve };
-				VecToCarray* eff_curve_min = new VecToCarray{ Propeller::eff_curve_min };
-				VecToCarray* eff_curve_max = new VecToCarray{ Propeller::eff_curve_max };
+				std::unique_ptr<VecToCarray> r_R				= std::make_unique<VecToCarray>(Propeller::r_R);
+				std::unique_ptr<VecToCarray> re					= std::make_unique<VecToCarray>(Propeller::reynolds);
+				std::unique_ptr<VecToCarray> re_min				= std::make_unique<VecToCarray>(Propeller::reynolds_min);
+				std::unique_ptr<VecToCarray> re_max				= std::make_unique<VecToCarray>(Propeller::reynolds_max);
+				std::unique_ptr<VecToCarray> chord				= std::make_unique<VecToCarray>(Propeller::chord);
+				std::unique_ptr<VecToCarray> rpm_curve			= std::make_unique<VecToCarray>(Propeller::rpm_curve);
+				std::unique_ptr<VecToCarray> thrust_curve		= std::make_unique<VecToCarray>(Propeller::thrust_curve);
+				std::unique_ptr<VecToCarray> thrust_curve_min	= std::make_unique<VecToCarray>(Propeller::thrust_curve_min);
+				std::unique_ptr<VecToCarray> thrust_curve_max	= std::make_unique<VecToCarray>(Propeller::thrust_curve_max);
+				std::unique_ptr<VecToCarray> torque_curve		= std::make_unique<VecToCarray>(Propeller::torque_curve);
+				std::unique_ptr<VecToCarray> torque_curve_min	= std::make_unique<VecToCarray>(Propeller::torque_curve_min);
+				std::unique_ptr<VecToCarray> torque_curve_max	= std::make_unique<VecToCarray>(Propeller::torque_curve_max);
+				std::unique_ptr<VecToCarray> eff_curve			= std::make_unique<VecToCarray>(Propeller::eff_curve);
+				std::unique_ptr<VecToCarray> eff_curve_min		= std::make_unique<VecToCarray>(Propeller::eff_curve_min);
+				std::unique_ptr<VecToCarray> eff_curve_max		= std::make_unique<VecToCarray>(Propeller::eff_curve_max);
 
 				ImGui::PushItemWidth(100 * xscale);
 				ImGui::DragFloat("Min RPM", &Propeller::min_rpm, NULL, 1, 100000, NULL, slider_flags); 
@@ -800,21 +800,6 @@ int WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPS
 					ImPlot::EndPlot();
 				}
 
-				delete r_R;
-				delete re;
-				delete re_min;
-				delete re_max;
-				delete chord;
-				delete rpm_curve;
-				delete thrust_curve;
-				delete thrust_curve_min;
-				delete thrust_curve_max;
-				delete torque_curve;
-				delete torque_curve_min;
-				delete torque_curve_max;
-				delete eff_curve;
-				delete eff_curve_min;
-				delete eff_curve_max;
 				ImGui::EndTabItem();
 			}
 

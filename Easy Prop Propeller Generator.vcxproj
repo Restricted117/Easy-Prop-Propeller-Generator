@@ -24,6 +24,7 @@
     <ProjectGuid>{8ee7e410-5dc4-408b-91c6-c9c497df8c4d}</ProjectGuid>
     <RootNamespace>EasyPropPropellerGenerator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Easy Prop</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
