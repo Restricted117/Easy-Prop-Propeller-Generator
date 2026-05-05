@@ -1,10 +1,14 @@
 # Easy Prop Propeller Generator
 
-Simple overview of use/purpose.
+Easy Prop is a GUI based propeller generator which uses simplified aerodynamics to generate blade geometry. It's mainly developed as an external tool to assist in CAD development of propellers. The program generates x,y,z txt files for the leading edge, trailing edge, as well as a user defined amount of airfoil cross sections which can be imported into CAD programs. Easy Prop also outputs a point cloud file which can be imported into tools such as MeshLab and be converted into a mesh.
 
 ## Methodology
 
-An in-depth paragraph about your project and overview of use.
+Easy Prop 
+
+## Installation
+
+Simply download EasyProp.exe from the release page and extract it and run the exe.
 
 ## Usage
 
@@ -18,17 +22,10 @@ An in-depth paragraph about your project and overview of use.
 * How/where to download your program
 * Any modifications needed to be made to files/folders
 
-### Installation
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License License - see the LICENSE.md file for details
 
 
 ## Acknowledgments
