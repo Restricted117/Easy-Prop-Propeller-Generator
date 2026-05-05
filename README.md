@@ -1,6 +1,6 @@
 # Easy Prop Propeller Generator
 
-Easy Prop is a GUI based propeller generator which uses simplified aerodynamics to generate blade geometry. It's mainly developed as an external tool to assist in CAD development of drone propellers. The program generates x,y,z txt files for the leading edge, trailing edge, as well as a user defined amount of airfoil cross sections which can be imported into CAD programs. Easy Prop also outputs a point cloud file which can be imported into tools such as MeshLab and be converted into a mesh.
+Easy Prop is a GUI based propeller generator which uses simplified aerodynamics to generate blade geometry. It's mainly developed as an external tool to assist in CAD development of drone propellers. Easy Prop generates x,y,z txt files for the leading edge, trailing edge, as well as a user defined amount of airfoil cross sections which can be imported into CAD programs. Easy Prop also outputs a point cloud file which can be imported into tools such as MeshLab and be converted into a 3D mesh.
 
 ## Methodology
 
@@ -23,40 +23,40 @@ It's recommended to use Easy Prop as a tool to assist in CAD modelling by import
 ### Parameter Definitions 
 
 #### Propeller Blade
-* Steps
-* Diameter
-* Airspeed
-* RPM
-* Blade Count
-* r/R Start
-* Design AOA
-* Number of Airfoils
-* Airfoil Sub Divisions
-* Chord Start
-* Chord End
-* Chord Power
-* Tip Offset x
-* Tip Offset y
-* Centerline power
-* Tip Smooth
-* Tip Smooth Start
-* Tip Smoothing
-* Tip Smoothing Strength
-* Rake
-* Rake Location
-* Rake Offset
-* Rake Strength
+* Steps: The number of sections for the blade to be divided into.
+* Diameter: Diameter of the prop. Units can be changed under the settings tab.
+* Airspeed: Operating airspeed of prop.
+* RPM: Rotations per minute.
+* Blade Count: Number of blades to be displayed and used for prop stats calculations.
+* r/R Start: Location of where to start blade generation where an r/R of 1 is the tip and 0 is the center.
+* Design AOA: The angle of attack to constrain BET to. This value should be around close to peak cl/cd for the expected reynolds number.
+* Number of Airfoils: Number of airfoils to display and save for the point cloud.
+* Airfoil Sub Divisions: Number of times to sub divide the airfoil into. 1 is reccomended for CAD and more than 1 for point cloud.
+* Chord Start: The chord width at r/R start.
+* Chord End: The chord width at the tip.
+* Chord Power: 1 = linear chord across the blade.
+* Tip Offset x: How much to offset the centerline along the x axis.
+* Tip Offset y: How much to offset the centerline along the y axis.
+* Centerline power: 1 = linear centerline across the blade.
+* Tip Smooth: Enables tip smoothing
+* Tip Smooth Start: r/R at which to begin smoothing
+* Tip Smoothing: amount to reduce end chord by. 1 = no smoothing
+* Tip Smoothing Strength: 1 = smoothes linearly.
+* Rake: Enables raked tip.
+* Rake Location: r/R location to begin rake.
+* Rake Offset: Amount to push the blade along y axis.
+* Rake Strength: 1 = linear rake.
 
 #### Propeller Hub
-* Generate Hub
-* Generate Hub Blade
-* Hub Diameter
-* Hub Inner Diameter
-* Hub Height
-* Hub Chord Start
-* Hub Curve Start
-* Hub x Offset
-* Hub y Offset
+* Generate Hub: Generates the central hub which connects all the blades.
+* Generate Hub Blade: Generates the hub blade section which connects the blade to the hub.
+* Hub Diameter: Diameter of the central hub.
+* Hub Inner Diameter: Diamter of the hole in the central hub.
+* Hub Height: Height of the central hub.
+* Hub Chord Start: The chord width at the center.
+* Hub Curve Start: r/R end point for the control points to generate the hub blade spline.
+* Hub x Offset: Amount to offset the hub blade along x axis.
+* Hub y Offset: Amount to offset the hub blade along y axis.
 
 
 ## License
