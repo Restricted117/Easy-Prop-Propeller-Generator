@@ -1,6 +1,6 @@
 # Easy Prop Propeller Generator
 
-Easy Prop is a GUI based propeller generator which uses simplified aerodynamics to generate blade geometry. It's mainly developed as an external tool to assist in CAD development of propellers. The program generates x,y,z txt files for the leading edge, trailing edge, as well as a user defined amount of airfoil cross sections which can be imported into CAD programs. Easy Prop also outputs a point cloud file which can be imported into tools such as MeshLab and be converted into a mesh.
+Easy Prop is a GUI based propeller generator which uses simplified aerodynamics to generate blade geometry. It's mainly developed as an external tool to assist in CAD development of drone propellers. The program generates x,y,z txt files for the leading edge, trailing edge, as well as a user defined amount of airfoil cross sections which can be imported into CAD programs. Easy Prop also outputs a point cloud file which can be imported into tools such as MeshLab and be converted into a mesh.
 
 ## Methodology
 
@@ -12,7 +12,7 @@ Easy Prop comes included with airfoil and polar files which can be found in the 
 
 ## Installation
 
-Simply download EasyProp.exe from the release page and extract it and run the exe.
+Simply download EasyProp.exe from the release page, unzip it, and run the exe.
 
 ## Usage
 
@@ -23,29 +23,40 @@ It's recommended to use Easy Prop as a tool to assist in CAD modelling by import
 ### Parameter Definitions 
 
 #### Propeller Blade
-Steps:
-Diameter:
-Airspeed:
-RPM:
-Blade Count:
-r/R Start:
-Design AOA:
-Number of Airfoils:
-Airfoil Sub Divisions:
-Chord Start:
-Chord End:
-Chord Power:
-Tip Offset x:
-Tip Offset y:
-Centerline power:
-Tip Smooth:
-Tip Smooth Start:
-Tip Smoothing:
-Tip Smoothing Strength:
-Rake:
-Rake Location:
-Rake Offset:
-Rake Strength:
+* Steps
+* Diameter
+* Airspeed
+* RPM
+* Blade Count
+* r/R Start
+* Design AOA
+* Number of Airfoils
+* Airfoil Sub Divisions
+* Chord Start
+* Chord End
+* Chord Power
+* Tip Offset x
+* Tip Offset y
+* Centerline power
+* Tip Smooth
+* Tip Smooth Start
+* Tip Smoothing
+* Tip Smoothing Strength
+* Rake
+* Rake Location
+* Rake Offset
+* Rake Strength
+
+#### Propeller Hub
+* Generate Hub
+* Generate Hub Blade
+* Hub Diameter
+* Hub Inner Diameter
+* Hub Height
+* Hub Chord Start
+* Hub Curve Start
+* Hub x Offset
+* Hub y Offset
 
 
 ## License
