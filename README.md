@@ -4,7 +4,11 @@ Easy Prop is a GUI based propeller generator which uses simplified aerodynamics 
 
 ## Methodology
 
-Easy Prop 
+Easy Prop splits the propeller blade into two sections: the blade hub and the blade. The blade hub is a spline that connects the center of the prop to the start of the blade at a user defined r/R. The blade section is starts at a user defined r/R and ends at the prop tip (r/R = 1). The blade section is divided into a user defined amount of steps and uses blade element theory along with a constant user defined angle of attack in order to generate the blade geometry. This isn't an ideal way to generate a prop but, it's a good first order method.
+
+## Importing Airfoils and Polar Files
+
+Easy Prop comes included with airfoil and polar files which can be found in the airfoil and polars files. To import different airfoils you can use [airfoil tools](http://airfoiltools.com/) and copy the x and y points into a txt file. You can also get the polar files from [airfoil tools](http://airfoiltools.com/) and download them as a csv. The files can be placed anywhere but is recommended to place them in the included directories .
 
 ## Installation
 
@@ -12,15 +16,36 @@ Simply download EasyProp.exe from the release page and extract it and run the ex
 
 ## Usage
 
-### Sugested Use Cases
+It's recommended to use Easy Prop as a tool to assist in CAD modelling by importing the airfoils, leading edge, and traling edge and then creating the rest of the prop geometry yourself but, you can also use the generated point cloud to generate a 3D mesh.
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+### CAD example
 
 ### Parameter Definitions 
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+#### Propeller Blade
+Steps:
+Diameter:
+Airspeed:
+RPM:
+Blade Count:
+r/R Start:
+Design AOA:
+Number of Airfoils:
+Airfoil Sub Divisions:
+Chord Start:
+Chord End:
+Chord Power:
+Tip Offset x:
+Tip Offset y:
+Centerline power:
+Tip Smooth:
+Tip Smooth Start:
+Tip Smoothing:
+Tip Smoothing Strength:
+Rake:
+Rake Location:
+Rake Offset:
+Rake Strength:
 
 
 ## License
