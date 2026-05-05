@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8ee7e410-5dc4-408b-91c6-c9c497df8c4d}</ProjectGuid>
+    <RootNamespace>EasyPropPropellerGenerator</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\external\imgui_extensions;$(SolutionDir)\external\imgui_docking;$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\include;$(SolutionDir)\external\glew\glew-2.3.1\include;$(SolutionDir)\external\toml++;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\lib-vc2022;$(SolutionDir)\external\glew\glew-2.3.1\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\external\imgui_extensions;$(SolutionDir)\external\imgui_docking;$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\include;$(SolutionDir)\external\glew\glew-2.3.1\include;$(SolutionDir)\external\toml++;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\lib-vc2022;$(SolutionDir)\external\glew\glew-2.3.1\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\external\imgui_extensions;$(SolutionDir)\external\imgui_docking;$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\include;$(SolutionDir)\external\glew\glew-2.3.1\include;$(SolutionDir)\external\toml++;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\lib-vc2022;$(SolutionDir)\external\glew\glew-2.3.1\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\external\imgui_extensions;$(SolutionDir)\external\imgui_docking;$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\include;$(SolutionDir)\external\glew\glew-2.3.1\include;$(SolutionDir)\external\toml++;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\lib-vc2022;$(SolutionDir)\external\glew\glew-2.3.1\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="external\glew\glew-2.3.1\doc\advanced.html" />
+    <None Include="external\glew\glew-2.3.1\doc\basic.html" />
+    <None Include="external\glew\glew-2.3.1\doc\build.html" />
+    <None Include="external\glew\glew-2.3.1\doc\credits.html" />
+    <None Include="external\glew\glew-2.3.1\doc\eglew.html" />
+    <None Include="external\glew\glew-2.3.1\doc\glew.html" />
+    <None Include="external\glew\glew-2.3.1\doc\glxew.html" />
+    <None Include="external\glew\glew-2.3.1\doc\index.html" />
+    <None Include="external\glew\glew-2.3.1\doc\install.html" />
+    <None Include="external\glew\glew-2.3.1\doc\log.html" />
+    <None Include="external\glew\glew-2.3.1\doc\wglew.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\build_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\build_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\compat_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\compat_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\compile_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\compile_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\context_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\context_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\deprecated.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\dir_13577e2d8b9423099662de029791bd7d.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\dir_7f92719a7fe62e5b064f87d7a3c220b1.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\dir_a788ef6c2b1e5b367804e0b6ccfd6f11.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\dir_b11153cd0f4fd04a7564cc166f482635.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\files.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\glfw3native_8h.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\glfw3native_8h_source.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\glfw3_8h.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\glfw3_8h_source.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__buttons.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__context.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__errors.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__gamepad__axes.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__gamepad__buttons.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__hat__state.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__init.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__input.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__joysticks.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__keys.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__mods.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__monitor.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__native.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__shapes.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__vulkan.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__window.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\index.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\input_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\input_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\internals_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\internal_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\intro_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\intro_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\main_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\monitor_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\monitor_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\moving_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\moving_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\news.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\news_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\pages.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\quick_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\quick_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wallocator.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wgamepadstate.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wgammaramp.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wimage.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wvidmode.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\topics.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\vulkan_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\vulkan_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\window_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\window_guide.html" />
+    <None Include="external\toml++\impl\array.inl" />
+    <None Include="external\toml++\impl\at_path.inl" />
+    <None Include="external\toml++\impl\formatter.inl" />
+    <None Include="external\toml++\impl\json_formatter.inl" />
+    <None Include="external\toml++\impl\node.inl" />
+    <None Include="external\toml++\impl\parser.inl" />
+    <None Include="external\toml++\impl\path.inl" />
+    <None Include="external\toml++\impl\print_to_stream.inl" />
+    <None Include="external\toml++\impl\std_string.inl" />
+    <None Include="external\toml++\impl\table.inl" />
+    <None Include="external\toml++\impl\toml_formatter.inl" />
+    <None Include="external\toml++\impl\unicode.inl" />
+    <None Include="external\toml++\impl\yaml_formatter.inl" />
+    <None Include="glew32.dll" />
+    <None Include="glfw3.dll" />
+    <None Include="imgui.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="external\glew\glew-2.3.1\include\GL\eglew.h" />
+    <ClInclude Include="external\glew\glew-2.3.1\include\GL\glew.h" />
+    <ClInclude Include="external\glew\glew-2.3.1\include\GL\glxew.h" />
+    <ClInclude Include="external\glew\glew-2.3.1\include\GL\wglew.h" />
+    <ClInclude Include="external\glfw\glfw-3.4.bin.WIN32\include\GLFW\glfw3.h" />
+    <ClInclude Include="external\glfw\glfw-3.4.bin.WIN32\include\GLFW\glfw3native.h" />
+    <ClInclude Include="external\imgui_docking\imconfig.h" />
+    <ClInclude Include="external\imgui_docking\imgui.h" />
+    <ClInclude Include="external\imgui_docking\imgui_impl_glfw.h" />
+    <ClInclude Include="external\imgui_docking\imgui_impl_opengl3.h" />
+    <ClInclude Include="external\imgui_docking\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="external\imgui_docking\imgui_internal.h" />
+    <ClInclude Include="external\imgui_docking\imstb_rectpack.h" />
+    <ClInclude Include="external\imgui_docking\imstb_textedit.h" />
+    <ClInclude Include="external\imgui_docking\imstb_truetype.h" />
+    <ClInclude Include="external\imgui_extensions\imfilebrowser.h" />
+    <ClInclude Include="external\imgui_extensions\implot\implot.h" />
+    <ClInclude Include="external\imgui_extensions\implot\implot_internal.h" />
+    <ClInclude Include="external\toml++\impl\array.hpp" />
+    <ClInclude Include="external\toml++\impl\at_path.hpp" />
+    <ClInclude Include="external\toml++\impl\date_time.hpp" />
+    <ClInclude Include="external\toml++\impl\formatter.hpp" />
+    <ClInclude Include="external\toml++\impl\forward_declarations.hpp" />
+    <ClInclude Include="external\toml++\impl\header_end.hpp" />
+    <ClInclude Include="external\toml++\impl\header_start.hpp" />
+    <ClInclude Include="external\toml++\impl\json_formatter.hpp" />
+    <ClInclude Include="external\toml++\impl\key.hpp" />
+    <ClInclude Include="external\toml++\impl\make_node.hpp" />
+    <ClInclude Include="external\toml++\impl\node.hpp" />
+    <ClInclude Include="external\toml++\impl\node_view.hpp" />
+    <ClInclude Include="external\toml++\impl\parser.hpp" />
+    <ClInclude Include="external\toml++\impl\parse_error.hpp" />
+    <ClInclude Include="external\toml++\impl\parse_result.hpp" />
+    <ClInclude Include="external\toml++\impl\path.hpp" />
+    <ClInclude Include="external\toml++\impl\preprocessor.hpp" />
+    <ClInclude Include="external\toml++\impl\print_to_stream.hpp" />
+    <ClInclude Include="external\toml++\impl\simd.hpp" />
+    <ClInclude Include="external\toml++\impl\source_region.hpp" />
+    <ClInclude Include="external\toml++\impl\std_except.hpp" />
+    <ClInclude Include="external\toml++\impl\std_initializer_list.hpp" />
+    <ClInclude Include="external\toml++\impl\std_map.hpp" />
+    <ClInclude Include="external\toml++\impl\std_new.hpp" />
+    <ClInclude Include="external\toml++\impl\std_optional.hpp" />
+    <ClInclude Include="external\toml++\impl\std_string.hpp" />
+    <ClInclude Include="external\toml++\impl\std_utility.hpp" />
+    <ClInclude Include="external\toml++\impl\std_variant.hpp" />
+    <ClInclude Include="external\toml++\impl\std_vector.hpp" />
+    <ClInclude Include="external\toml++\impl\table.hpp" />
+    <ClInclude Include="external\toml++\impl\toml_formatter.hpp" />
+    <ClInclude Include="external\toml++\impl\unicode.hpp" />
+    <ClInclude Include="external\toml++\impl\unicode_autogenerated.hpp" />
+    <ClInclude Include="external\toml++\impl\value.hpp" />
+    <ClInclude Include="external\toml++\impl\version.hpp" />
+    <ClInclude Include="external\toml++\impl\yaml_formatter.hpp" />
+    <ClInclude Include="external\toml++\toml.h" />
+    <ClInclude Include="external\toml++\toml.hpp" />
+    <ClInclude Include="imgui_log_window.h" />
+    <ClInclude Include="point_renderer.h" />
+    <ClInclude Include="propeller.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="external\imgui_docking\imgui.cpp" />
+    <ClCompile Include="external\imgui_docking\imgui_demo.cpp" />
+    <ClCompile Include="external\imgui_docking\imgui_draw.cpp" />
+    <ClCompile Include="external\imgui_docking\imgui_impl_glfw.cpp" />
+    <ClCompile Include="external\imgui_docking\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="external\imgui_docking\imgui_tables.cpp" />
+    <ClCompile Include="external\imgui_docking\imgui_widgets.cpp" />
+    <ClCompile Include="external\imgui_extensions\implot\implot.cpp" />
+    <ClCompile Include="external\imgui_extensions\implot\implot_items.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="propeller.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="propeller_clipart.ico" />
+    <Image Include="propeller_clipart.png" />
+    <Image Include="propeller_clipart_small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Easy Prop Propeller Generator.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

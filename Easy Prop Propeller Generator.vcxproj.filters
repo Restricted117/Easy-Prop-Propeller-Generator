@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\build_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\build_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\compat_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\compat_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\compile_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\compile_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\context_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\context_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\deprecated.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\dir_7f92719a7fe62e5b064f87d7a3c220b1.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\dir_13577e2d8b9423099662de029791bd7d.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\dir_a788ef6c2b1e5b367804e0b6ccfd6f11.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\dir_b11153cd0f4fd04a7564cc166f482635.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\files.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\glfw3_8h.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\glfw3_8h_source.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\glfw3native_8h.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\glfw3native_8h_source.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__buttons.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__context.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__errors.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__gamepad__axes.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__gamepad__buttons.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__hat__state.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__init.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__input.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__joysticks.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__keys.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__mods.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__monitor.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__native.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__shapes.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__vulkan.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\group__window.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\index.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\input_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\input_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\internal_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\internals_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\intro_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\intro_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\main_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\monitor_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\monitor_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\moving_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\moving_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\news.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\news_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\pages.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\quick_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\quick_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wallocator.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wgamepadstate.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wgammaramp.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wimage.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\struct_g_l_f_wvidmode.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\topics.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\vulkan_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\vulkan_guide.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\window_8md.html" />
+    <None Include="external\glfw\glfw-3.4.bin.WIN32\docs\html\window_guide.html" />
+    <None Include="external\glew\glew-2.3.1\doc\advanced.html" />
+    <None Include="external\glew\glew-2.3.1\doc\basic.html" />
+    <None Include="external\glew\glew-2.3.1\doc\build.html" />
+    <None Include="external\glew\glew-2.3.1\doc\credits.html" />
+    <None Include="external\glew\glew-2.3.1\doc\eglew.html" />
+    <None Include="external\glew\glew-2.3.1\doc\glew.html" />
+    <None Include="external\glew\glew-2.3.1\doc\glxew.html" />
+    <None Include="external\glew\glew-2.3.1\doc\index.html" />
+    <None Include="external\glew\glew-2.3.1\doc\install.html" />
+    <None Include="external\glew\glew-2.3.1\doc\log.html" />
+    <None Include="external\glew\glew-2.3.1\doc\wglew.html" />
+    <None Include="external\toml++\impl\array.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\at_path.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\formatter.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\json_formatter.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\node.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\parser.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\path.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\print_to_stream.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\std_string.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\table.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\toml_formatter.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\unicode.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="external\toml++\impl\yaml_formatter.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="glew32.dll" />
+    <None Include="glfw3.dll" />
+    <None Include="imgui.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="external\imgui_docking\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_docking\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_docking\imgui_impl_glfw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_docking\imgui_impl_opengl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_docking\imgui_impl_opengl3_loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_docking\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_docking\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_docking\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_docking\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\glfw\glfw-3.4.bin.WIN32\include\GLFW\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\glfw\glfw-3.4.bin.WIN32\include\GLFW\glfw3native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\glew\glew-2.3.1\include\GL\eglew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\glew\glew-2.3.1\include\GL\glew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\glew\glew-2.3.1\include\GL\glxew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\glew\glew-2.3.1\include\GL\wglew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_extensions\implot\implot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_extensions\implot\implot_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui_extensions\imfilebrowser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\at_path.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\date_time.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\formatter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\forward_declarations.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\header_end.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\header_start.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\json_formatter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\key.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\make_node.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\node.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\node_view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\parse_error.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\parse_result.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\parser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\path.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\preprocessor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\print_to_stream.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\simd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\source_region.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_except.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_initializer_list.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_new.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_optional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_string.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_variant.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\std_vector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\table.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\toml_formatter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\unicode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\unicode_autogenerated.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\value.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\impl\yaml_formatter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\toml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external\toml++\toml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_log_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point_renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="propeller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="external\imgui_docking\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui_docking\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui_docking\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui_docking\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui_docking\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui_docking\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui_docking\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui_extensions\implot\implot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui_extensions\implot\implot_items.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="propeller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="propeller_clipart.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="propeller_clipart.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="propeller_clipart_small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Easy Prop Propeller Generator.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
