@@ -20,43 +20,57 @@ It's recommended to use Easy Prop as a tool to assist in CAD modelling by import
 
 ### CAD example
 
+#### Example of using Easy Prop to design a 5 inch 3 inch pitch prop:
+
+<img width="1920" height="1017" alt="Easy Prop 5_5_2026 5_03_06 PM" src="https://github.com/user-attachments/assets/a52e63f7-f7b7-4bd2-b1aa-e25e33e0b6ff" /><br>
+
+
+After importing the airfoil cross sections, trailing edge, and leading edge:
+
+<img width="1920" height="1040" alt="SOLIDWORKS Student Edition - Academic Use Only -  5inch2blade 3_0 pitch SLDPRT _  5_5_2026 4_43_59 PM" src="https://github.com/user-attachments/assets/9c09430e-91ce-46a2-9f57-80c6ef11fe19" /><br>
+
+After lofting and designing a custom hub:
+
+<img width="1920" height="1040" alt="SOLIDWORKS Student Edition - Academic Use Only -  5inch2blade 3_0 pitch SLDPRT _  5_5_2026 4_44_12 PM" src="https://github.com/user-attachments/assets/57d71389-c73b-44b5-8997-ac08f4401a36" /><br>
+
+
 ### Parameter Definitions 
 
-#### Propeller Blade
-* <ins>Steps:</ins> The number of sections for the blade to be divided into.
-* <ins>Diameter:</ins> Diameter of the prop. Units can be changed under the settings tab.
-* <ins>Airspeed:</ins> Operating airspeed of prop.
-* <ins>RPM:</ins> Rotations per minute.
-* <ins>Blade Count:</ins> Number of blades to be displayed and used for prop stats calculations.
-* <ins>r/R Start:</ins> Location of where to start blade generation where an r/R of 1 is the tip and 0 is the center.
-* <ins>Design AOA:</ins> The angle of attack to constrain BET to. This value should be around close to peak cl/cd for the expected reynolds number.
-* <ins>Number of Airfoils:</ins> Number of airfoils to display and save for the point cloud.
-* <ins>Airfoil Sub Divisions:</ins> Number of times to sub divide the airfoil into. 1 is reccomended for CAD and more than 1 for point cloud.
-* <ins>Chord Start:</ins> The chord width at r/R start.
-* <ins>Chord End:</ins> The chord width at the tip.
-* <ins>Chord Power:</ins> 1 = linear chord across the blade.
-* <ins>Tip Offset x:</ins> How much to offset the centerline along the x axis.
-* <ins>Tip Offset y:</ins> How much to offset the centerline along the y axis.
-* <ins>Centerline power:</ins> 1 = linear centerline across the blade.
-* <ins>Tip Smooth:</ins> Enables tip smoothing
-* <ins>Tip Smooth Start:</ins> r/R at which to begin smoothing
-* <ins>Tip Smoothing:</ins> amount to reduce end chord by. 1 = no smoothing
-* <ins>Tip Smoothing Strength:</ins> 1 = smoothes linearly.
-* <ins>Rake:</ins> Enables raked tip.
-* <ins>Rake Location:</ins> r/R location to begin rake.
-* <ins>Rake Offset:</ins> Amount to push the blade along y axis.
-* <ins>Rake Strength:</ins> 1 = linear rake.
+* Propeller Blade
+  * <ins>Steps:</ins> The number of sections for the blade to be divided into.
+  * <ins>Diameter:</ins> Diameter of the prop. Units can be changed under the settings tab.
+  * <ins>Airspeed:</ins> Operating airspeed of prop.
+  * <ins>RPM:</ins> Rotations per minute.
+  * <ins>Blade Count:</ins> Number of blades to be displayed and used for prop stats calculations.
+  * <ins>r/R Start:</ins> Location of where to start blade generation where an r/R of 1 is the tip and 0 is the center.
+  * <ins>Design AOA:</ins> The angle of attack to constrain BET to. This value should be around close to peak cl/cd for the expected reynolds number.
+  * <ins>Number of Airfoils:</ins> Number of airfoils to display and save for the point cloud.
+  * <ins>Airfoil Sub Divisions:</ins> Number of times to sub divide the airfoil into. 1 is reccomended for CAD and more than 1 for point cloud.
+  * <ins>Chord Start:</ins> The chord width at r/R start.
+  * <ins>Chord End:</ins> The chord width at the tip.
+  * <ins>Chord Power:</ins> 1 = linear chord across the blade.
+  * <ins>Tip Offset x:</ins> How much to offset the centerline along the x axis.
+  * <ins>Tip Offset y:</ins> How much to offset the centerline along the y axis.
+  * <ins>Centerline power:</ins> 1 = linear centerline across the blade.
+  * <ins>Tip Smooth:</ins> Enables tip smoothing
+  * <ins>Tip Smooth Start:</ins> r/R at which to begin smoothing
+  * <ins>Tip Smoothing:</ins> amount to reduce end chord by. 1 = no smoothing
+  * <ins>Tip Smoothing Strength:</ins> 1 = smoothes linearly.
+  * <ins>Rake:</ins> Enables raked tip.
+  * <ins>Rake Location:</ins> r/R location to begin rake.
+  * <ins>Rake Offset:</ins> Amount to push the blade along y axis.
+  * <ins>Rake Strength:</ins> 1 = linear rake.
 
-#### Propeller Hub
-* <ins>Generate Hub:</ins> Generates the central hub which connects all the blades.
-* <ins>Generate Hub Blade:</ins> Generates the hub blade section which connects the blade to the hub.
-* <ins>Hub Diameter:</ins> Diameter of the central hub.
-* <ins>Hub Inner Diameter:</ins> Diamter of the hole in the central hub.
-* <ins>Hub Height:</ins> Height of the central hub.
-* <ins>Hub Chord Start:</ins> The chord width at the center.
-* <ins>Hub Curve Start:</ins> r/R end point for the control points to generate the hub blade spline.
-* <ins>Hub x Offset:</ins> Amount to offset the hub blade along x axis.
-* <ins>Hub y Offset:</ins> Amount to offset the hub blade along y axis.
+* Propeller Hub
+  * <ins>Generate Hub:</ins> Generates the central hub which connects all the blades.
+  * <ins>Generate Hub Blade:</ins> Generates the hub blade section which connects the blade to the hub.
+  * <ins>Hub Diameter:</ins> Diameter of the central hub.
+  * <ins>Hub Inner Diameter:</ins> Diamter of the hole in the central hub.
+  * <ins>Hub Height:</ins> Height of the central hub.
+  * <ins>Hub Chord Start:</ins> The chord width at the center.
+  * <ins>Hub Curve Start:</ins> r/R end point for the control points to generate the hub blade spline.
+  * <ins>Hub x Offset:</ins> Amount to offset the hub blade along x axis.
+  * <ins>Hub y Offset:</ins> Amount to offset the hub blade along y axis.
 
 
 ## License
