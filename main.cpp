@@ -684,12 +684,12 @@ int WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPS
 				snprintf(stats_text, 255, "Thrust at %.0f RPM and %.1f", Propeller::rpm, Propeller::air_speed);
 				ImGui::Text(stats_text); ImGui::SameLine();
 				ImGui::Text("%s:", display_vel.c_str()); ImGui::SameLine();
-				ImGui::TextColored(ImVec4(0, 1, 0, 1), "%.2f", Propeller::thrust); ImGui::SameLine(); ImGui::TextColored(ImVec4(0, 1, 0, 1), graph_display_units_thrust.c_str());
+				ImGui::TextColored(ImVec4(0, 1, 0, 1), "%.4f", Propeller::thrust); ImGui::SameLine(); ImGui::TextColored(ImVec4(0, 1, 0, 1), graph_display_units_thrust.c_str());
 
 				snprintf(stats_text, 255, "Torque at %.0f RPM and %.1f", Propeller::rpm, Propeller::air_speed);
 				ImGui::Text(stats_text); ImGui::SameLine();
 				ImGui::Text("%s:", display_vel.c_str()); ImGui::SameLine();
-				ImGui::TextColored(ImVec4(0, 1, 0, 1), "%.2f", Propeller::torque); ImGui::SameLine(); ImGui::TextColored(ImVec4(0, 1, 0, 1), graph_display_units_torque.c_str());
+				ImGui::TextColored(ImVec4(0, 1, 0, 1), "%.4f", Propeller::torque); ImGui::SameLine(); ImGui::TextColored(ImVec4(0, 1, 0, 1), graph_display_units_torque.c_str());
 
 				snprintf(stats_text, 255, "Blade Efficiency at %.0f RPM %.1f", Propeller::rpm, Propeller::air_speed);
 				ImGui::Text(stats_text); ImGui::SameLine();
