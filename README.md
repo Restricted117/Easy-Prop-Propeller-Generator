@@ -20,7 +20,7 @@ It's recommended to use Easy Prop as a tool to assist in CAD modelling by import
 
 ### CAD example
 
-#### Example of using Easy Prop to design a 5 inch 3 inch pitch prop:
+#### Example of using Easy Prop to design a 5 inch diameter 3 inch pitch prop:
 
 <img width="1920" height="1017" alt="Easy Prop 5_5_2026 5_03_06 PM" src="https://github.com/user-attachments/assets/a52e63f7-f7b7-4bd2-b1aa-e25e33e0b6ff" /><br>
 
