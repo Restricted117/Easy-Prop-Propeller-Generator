@@ -812,7 +812,7 @@ void getAirfoil(std::string filename, int subdivisions)
 	int row{ -1 };
 
 
-	for (int i{ 0 }; i <= length - 1; ++i)
+	for (int i{ 0 }; i < length; ++i)
 	{
 		for (int j{ 0 }; j <= 1; ++j)
 		{
@@ -823,7 +823,9 @@ void getAirfoil(std::string filename, int subdivisions)
 		airfoil_base[i][2] = 0;
 	}
 
-	airfoil_base[length - 1][1] = airfoil_base[0][1];
+	airfoil_base.push_back(airfoil_base[0]);
+
+	length = airfoil_base.size();
 
 
 	if (subdivisions > 1)
