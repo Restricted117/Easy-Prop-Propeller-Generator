@@ -81,7 +81,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\external\imgui_extensions;$(SolutionDir)\external\imgui_docking;$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\include;$(SolutionDir)\external\glew\glew-2.3.1\include;$(SolutionDir)\external\toml++;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\lib-vc2022;$(SolutionDir)\external\glew\glew-2.3.1\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib</AdditionalDependencies>
@@ -99,7 +99,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\lib-vc2022;$(SolutionDir)\external\glew\glew-2.3.1\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -115,7 +115,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\external\imgui_extensions;$(SolutionDir)\external\imgui_docking;$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\include;$(SolutionDir)\external\glew\glew-2.3.1\include;$(SolutionDir)\external\toml++;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\lib-vc2022;$(SolutionDir)\external\glew\glew-2.3.1\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib</AdditionalDependencies>
@@ -133,7 +133,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3dll.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)\external\glfw\glfw-3.4.bin.WIN32\lib-vc2022;$(SolutionDir)\external\glew\glew-2.3.1\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>

@@ -1000,46 +1000,52 @@ float trapezodialRule(std::vector<float> x, std::vector<float> y)
 
 float findThrust(float v, float rpm)
 {
-	Propeller::polars polar = *std::lower_bound(Propeller::polar_table.begin(), Propeller::polar_table.end(), Propeller::a,
-		[](Propeller::polars i, float j)
-		{
-			return i.aoa < j;
-		});
-
-	float gamma = std::atanf(polar.cd / polar.cl);
 	std::vector<float> Tc(Propeller::steps);
-
 
 	for (int i{ 0 }; i < Propeller::steps; ++i)
 	{
-		float phi = std::atanf(v / (2 * Propeller::PI * 0.5 * Propeller::diameter_meters * (rpm / 60)));
-		float k = (polar.cl * Propeller::chord_meters[i]) / (std::sinf(phi) * std::sinf(phi) * std::cosf(gamma));
-		Tc[i] = (k * std::cosf(phi + gamma));
+		float phi = std::atanf(v / (2 * Propeller::PI * Propeller::z_loc_meters[i] * (rpm / 60)));
+		float a = Propeller::blade_angles[i] - phi;
+
+		Propeller::polars polar = *std::lower_bound(Propeller::polar_table.begin(), Propeller::polar_table.end(), a,
+			[](Propeller::polars i, float j)
+			{
+				return i.aoa < j;
+			});
+
+		float gamma = std::atanf(polar.cd / polar.cl);
+
+		float k = (polar.cl * Propeller::chord_meters[i]) / (powf(std::sinf(phi), 2) * std::cosf(gamma));
+
+		Tc[i] = (k * std::cosf(gamma + phi));
 	}
 
 	float thrust = ((0.5 * Propeller::density * powf(Propeller::air_speed_meters, 2) * Propeller::num_blades) * trapezodialRule(Propeller::z_loc_meters, Tc));
-
+	
 	return thrust;
 }
 
 
 float findTorque(float v, float rpm)
 {
-	Propeller::polars polar = *std::lower_bound(Propeller::polar_table.begin(), Propeller::polar_table.end(), Propeller::a,
-		[](Propeller::polars i, float j)
-		{
-			return i.aoa < j;
-		});
-
-	float gamma = std::atanf(polar.cd / polar.cl);
 	std::vector<float> Qc(Propeller::steps);
 
 
 	for (int i{ 0 }; i < Propeller::steps; ++i)
 	{
-		float phi = std::atanf(v / (2 * Propeller::PI * 0.5 * Propeller::diameter_meters * (rpm / 60)));
-		float k = (polar.cl * Propeller::chord_meters[i]) / (std::sinf(phi) * std::sinf(phi) * std::cosf(gamma));
-		Qc[i] = (k * 0.5 * Propeller::diameter_meters * std::sinf(phi + gamma));
+		float phi = std::atanf(v / (2 * Propeller::PI * Propeller::z_loc_meters[i] * (rpm / 60)));
+		float a = Propeller::blade_angles[i] - phi;
+
+		Propeller::polars polar = *std::lower_bound(Propeller::polar_table.begin(), Propeller::polar_table.end(), a,
+			[](Propeller::polars i, float j)
+			{
+				return i.aoa < j;
+			});
+
+		float gamma = std::atanf(polar.cd / polar.cl);
+
+		float k = (polar.cl * Propeller::chord_meters[i]) / (powf(std::sinf(phi), 2) * std::cosf(gamma));
+		Qc[i] = (k * Propeller::z_loc_meters[i] * std::sinf(gamma + phi));
 	}
 
 	float torque = ((0.5 * Propeller::density * powf(Propeller::air_speed_meters, 2) * Propeller::num_blades) * trapezodialRule(Propeller::z_loc_meters, Qc));
@@ -1073,6 +1079,7 @@ void generateThrustCurve()
 	Propeller::reynolds.resize(Propeller::steps);
 	Propeller::reynolds_min.resize(Propeller::steps);
 	Propeller::reynolds_max.resize(Propeller::steps);
+
 
 	if (Propeller::unit_selection == Propeller::Units::m || Propeller::unit_selection == Propeller::Units::mm)
 	{
